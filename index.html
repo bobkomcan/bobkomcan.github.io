@@ -3,10 +3,468 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Volodymyr Komarov - Game Programmer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/devicon/devicon.min.css"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        color: #cfcfcf; /* Light grey text, suitable for dark background */
+        background-color: #121212; /* Very dark grey, near-black background */
+      }
+
+      .hero-section {
+        background: url('img/photo.jpg') no-repeat center center;
+        background-size: cover;
+        color: white;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar-dark .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.75);
+      }
+
+      .navbar-dark .navbar-nav .nav-link:hover,
+      .navbar-dark .navbar-nav .nav-link:focus {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      .navbar {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .btn-primary:hover {
+        background-color: #0069d9;
+        border-color: #0062cc;
+      }
+
+      .tech-icon {
+        font-size: 3rem; /* Adjusts the size of the icon */
+        color: #f0db4f; /* Example color: JavaScript yellow */
+        margin: 10px;
+      }
+
+      .tech-icon:hover {
+        color: #333; /* Darker color on hover */
+        transition: color 0.3s ease;
+      }
+
+      .portfolio-item {
+        margin-bottom: 30px;
+      }
+
+      .card {
+        background: #1f1f1f; /* Dark cards */
+        color: #cfcfcf;
+      }
+
+      .card .btn-primary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+
+      .card .btn-primary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+      }
+
+      .form-control {
+        background-color: #333;
+        color: #cfcfcf;
+        border: 1px solid #444;
+      }
+
+      .form-control:focus {
+        background-color: #333;
+        border-color: #007bff;
+        outline: 0;
+        box-shadow: none;
+      }
+
+      .invalid-feedback {
+        display: none; /* Hide default feedback text */
+      }
+
+      .was-validated .form-control:invalid {
+        border-color: #dc3545;
+        padding-right: calc(1.5em + 0.75rem);
+        background-image: none; /* Remove default background images */
+      }
+
+      .was-validated .form-control:invalid:focus {
+        border-color: #dc3545;
+        box-shadow: none;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to the Bob The Game Builder website</h1>
-    <p>work in progress</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#">Volodymyr Komarov</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="hero-section">
+      <h1>Volodymyr Komarov</h1>
+      <p>Passionate Game Programmer</p>
+      <a href="#portfolio" class="btn btn-primary">View My Work</a>
+    </div>
+
+    <div class="container mt-5" id="about">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm Volodymyr Komarov, a game programmer based in Canada. My
+        journey from engineering to game development has been fueled by a
+        relentless passion for creating immersive gaming experiences. With
+        Master degree in engineering and degree in Gaming Experience Development
+        from New Brunswick Community College,
+      </p>
+      <p>
+        I've honed my skills in C++, Java, C#, and JavaScript, alongside
+        mastering game development frameworks. At Digital Extremes, I've
+        immersed myself in the gaming industry, handling complex customer
+        support queries and contributing to community engagement, which has
+        deepened my understanding of what makes games truly engaging.
+      </p>
+      <p>
+        Game programming for me is the perfect blend of creativity, technology,
+        and storytelling. It's about bringing imaginative worlds to life and
+        crafting experiences that resonate with players globally. I'm excited to
+        explore new technologies, push creative boundaries, and contribute to
+        innovative gaming projects. Check out my portfolio to see the adventures
+        I've created. Let's make something amazing together.
+      </p>
+    </div>
+
+    <style>
+      .tech-icon {
+        font-size: 3rem; /* Adjusts the size of the icon */
+        color: #f0db4f; /* Example color: JavaScript yellow */
+        margin: 10px;
+      }
+
+      .tech-icon:hover {
+        color: #333; /* Darker color on hover */
+        transition: color 0.3s ease;
+      }
+
+      .tech-stack p {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+
+    <div class="container mt-5">
+      <h2 class="mb-4">My Toolkit:</h2>
+      <div class="row">
+        <!-- C++ -->
+        <div class="col text-center">
+          <i class="devicon-cplusplus-plain colored tech-icon"></i>
+          <p>C++</p>
+        </div>
+        <!-- Java -->
+        <div class="col text-center">
+          <i class="devicon-java-plain colored tech-icon"></i>
+          <p>Java</p>
+        </div>
+        <!-- C# -->
+        <div class="col text-center">
+          <i class="devicon-csharp-plain colored tech-icon"></i>
+          <p>C#</p>
+        </div>
+        <!-- JavaScript -->
+        <div class="col text-center">
+          <i class="devicon-javascript-plain colored tech-icon"></i>
+          <p>JavaScript</p>
+        </div>
+        <!-- Node.js -->
+        <div class="col text-center">
+          <i class="devicon-nodejs-plain colored tech-icon"></i>
+          <p>Node.js</p>
+        </div>
+        <!-- Kotlin -->
+        <div class="col text-center">
+          <i class="devicon-kotlin-plain colored tech-icon"></i>
+          <p>Kotlin</p>
+        </div>
+        <!-- Android Studio -->
+        <div class="col text-center">
+          <i class="devicon-android-plain colored tech-icon"></i>
+          <p>Android Studio</p>
+        </div>
+        <!-- Express -->
+        <div class="col text-center">
+          <i class="devicon-express-original colored tech-icon"></i>
+          <p>Express</p>
+        </div>
+        <!-- OOP Principles -->
+        <div class="col text-center">
+          <i class="devicon-oop-plain colored tech-icon"></i>
+          <!-- This icon might not exist, choose an alternative -->
+          <p>OOP Principles</p>
+        </div>
+        <!-- SQL Server -->
+        <div class="col text-center">
+          <i class="devicon-microsoftsqlserver-plain colored tech-icon"></i>
+          <p>SQL Server</p>
+        </div>
+        <!-- MongoDB -->
+        <div class="col text-center">
+          <i class="devicon-mongodb-plain colored tech-icon"></i>
+          <p>MongoDB</p>
+        </div>
+        <!-- More icons... -->
+      </div>
+    </div>
+
+    <div class="container mt-5" id="portfolio">
+      <h2>My Portfolio</h2>
+      <div class="row">
+        <!-- Portfolio item 1 -->
+        <div class="col-md-4 portfolio-item">
+          <div class="card">
+            <img
+              src="img/zombie1.png"
+              class="card-img-top"
+              alt="Zombie Outlast"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Zombie Outlast</h5>
+              <p class="card-text">
+                "Zombie Outlast" is a thrilling survival game set in a
+                post-apocalyptic world filled with zombies. Developed with SFML
+                and C++, it challenges players to outlive the undead through
+                strategic exploration, resource management, and combat. The game
+                features a responsive world view, advanced animation for
+                realistic movements, and a smart zombie AI that keeps players on
+                their toes. With its engaging mechanics and compelling
+                narrative, "Zombie Outlast" offers an immersive experience in
+                the fight for survival against all odds.
+              </p>
+              <a href="#" class="btn btn-primary"> </a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more portfolio items here -->
+        <div class="col-md-4 portfolio-item">
+          <div class="card">
+            <img
+              src="img/baseConquest.png"
+              class="card-img-top"
+              alt="Base Conquest: Battle Connections"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Base Conquest: Battle Connections</h5>
+              <p class="card-text">
+                "Base Conquest: Battle Connections" is a captivating, low-poly
+                strategy game set in a cartoonish military world. Players engage
+                in tactical base expansion and resource management, focusing on
+                creating efficient connections for success. The game combines
+                simple yet strategic gameplay with a charming art style,
+                offering a light-hearted take on army-themed adventures. Ideal
+                for both strategy enthusiasts and casual gamers, it provides an
+                entertaining mix of base building and lively tactical battles.
+              </p>
+              <a href="#" class="btn btn-primary"> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <div class="card">
+            <img
+              src="img/BuriedHorrors.png"
+              class="card-img-top"
+              alt="Buried Horrors"
+            />
+            <div class="card-body">
+              <h5 class="card-title">"Buried Horrors"</h5>
+              <p class="card-text">
+                In "Buried Horrors", you find yourself trapped in an abandoned
+                and zombie-infested mine with no weapons. Your only hope for
+                survival is to scavenge for gas to start an old generator that
+                will power an elevator and take you to safety. But be warned,
+                the mine is filled with dangers at every turn and you must use
+                your wits and quick reflexes to avoid becoming a meal for the
+                undead. Can you gather enough gas, start the generator, and make
+                it out alive? The clock is ticking, and the horrors of the mine
+                are closing in.
+              </p>
+              <a href="#" class="btn btn-primary"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5 mb-5" id="contact">
+      <h2>Contact Me</h2>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="needs-validation"
+        novalidate
+      >
+        <input
+          type="hidden"
+          name="access_key"
+          value="c4ce70d0-ed77-4294-a293-7bbb0c2ec9f0"
+        />
+
+        <!-- <input type="text" name="name" required>
+      <input type="email" name="email" required>
+      <textarea name="message" required></textarea>
+      <div class="h-captcha" data-captcha="true"></div>
+      <button type="submit">Submit Form</button>
+  
+  </form>
+  
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+</div> -->
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="3"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Please enter a message.</div>
+        </div>
+        <div class="h-captcha" data-captcha="true"></div>
+        <button type="submit" class="btn btn-primary">Submit Form</button>
+      </form>
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+          'use strict';
+          window.addEventListener(
+            'load',
+            function () {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(
+                forms,
+                function (form) {
+                  form.addEventListener(
+                    'submit',
+                    function (event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    },
+                    false
+                  );
+                }
+              );
+            },
+            false
+          );
+        })();
+      </script>
+    </div>
+
+    <footer class="bg-dark text-light mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <h5>About Me</h5>
+            <p class="mb-0">
+              Volodymyr Komarov - Passionate Game Programmer from Moncton, NB.
+            </p>
+          </div>
+          <div class="col-md-3 mb-3 mb-md-0">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#about" class="text-light">About Me</a></li>
+              <li><a href="#portfolio" class="text-light">Portfolio</a></li>
+              <li><a href="#contact" class="text-light">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Information</h5>
+            <ul class="list-unstyled">
+              <li>Phone: 226-376-0769</li>
+              <li>Email: v.komarov.eng@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center small mt-4">
+          ©2024 Volodymyr Komarov. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
