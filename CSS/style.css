@@ -1,0 +1,133 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: #cfcfcf; /* Light grey text, suitable for dark background */
+  background-color: #121212; /* Very dark grey, near-black background */
+}
+
+.hero-section {
+  background: url('../img/photo.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Adjust based on desired vertical positioning */
+  padding: 0 20px 100px; /* Adds padding at the bottom */
+  flex-direction: column;
+  text-align: top;
+}
+
+.hero-section h1,
+.hero-section p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to make text more legible */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.tech-icon {
+  font-size: 3rem; /* Adjusts the size of the icon */
+  color: #f0db4f; /* Example color: JavaScript yellow */
+  margin: 10px;
+}
+
+.tech-icon:hover {
+  color: #333; /* Darker color on hover */
+  transition: color 0.3s ease;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #1f1f1f; /* Dark cards */
+  color: #cfcfcf;
+}
+
+.card .btn-primary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.card .btn-primary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.form-control {
+  background-color: #333;
+  color: #cfcfcf;
+  border: 1px solid #444;
+}
+
+.form-control:focus {
+  background-color: #333;
+  border-color: #007bff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.invalid-feedback {
+  display: none; /* Hide default feedback text */
+}
+
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: none; /* Remove default background images */
+}
+
+.was-validated .form-control:invalid:focus {
+  border-color: #dc3545;
+  box-shadow: none;
+}
+
+.tech-icon {
+  font-size: 3rem; /* Adjusts the size of the icon */
+  color: #f0db4f; /* Example color: JavaScript yellow */
+  margin: 10px;
+}
+
+.tech-icon:hover {
+  color: #333; /* Darker color on hover */
+  transition: color 0.3s ease;
+}
+
+.tech-stack p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card-img-top {
+  width: 100%; /* This makes the image fill the card width */
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* This will cover the area without stretching the image */
+}
+
+.more-text {
+  display: none;
+}
