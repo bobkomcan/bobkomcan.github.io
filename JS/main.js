@@ -14,14 +14,21 @@ $(document).ready(function () {
 });
 
 function readMore(button) {
-  var moreText = button.previousElementSibling;
-  var btnText = button;
+  // We use the button's parent node to scope our search for related elements
+  var container = button.parentNode;
 
-  if (moreText.style.display === 'none') {
-    btnText.textContent = 'Read Less';
-    moreText.style.display = 'inline';
-  } else {
-    btnText.textContent = 'Read More';
+  // Find the dots and moreText within the container
+  var dots = container.querySelector('.dots');
+  var moreText = container.querySelector('.more');
+
+  // Toggle the dots and moreText display style
+  if (dots.style.display === 'none') {
+    dots.style.display = 'inline';
+    button.textContent = 'Read More'; // Update the button text
     moreText.style.display = 'none';
+  } else {
+    dots.style.display = 'none';
+    button.textContent = 'Read Less'; // Update the button text
+    moreText.style.display = 'inline';
   }
 }

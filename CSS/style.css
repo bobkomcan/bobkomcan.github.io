@@ -48,15 +48,22 @@ html {
   border-color: #0062cc;
 }
 
+/* Increased specificity by targeting .tech-icon within .col */
 .tech-icon {
-  font-size: 3rem; /* Adjusts the size of the icon */
-  color: #f0db4f; /* Example color: JavaScript yellow */
+  font-size: 3rem;
   margin: 10px;
 }
 
 .tech-icon:hover {
-  color: #333; /* Darker color on hover */
-  transition: color 0.3s ease;
+  color: #ffffff; /* Highlight color on hover */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out !important;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.3);
 }
 
 .portfolio-item {
@@ -106,28 +113,12 @@ html {
   box-shadow: none;
 }
 
-.tech-icon {
-  font-size: 3rem; /* Adjusts the size of the icon */
-  color: #f0db4f; /* Example color: JavaScript yellow */
-  margin: 10px;
-}
-
-.tech-icon:hover {
-  color: #333; /* Darker color on hover */
-  transition: color 0.3s ease;
-}
-
-.tech-stack p {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
 .card-img-top {
   width: 100%; /* This makes the image fill the card width */
   height: 200px; /* Adjust height as needed */
   object-fit: cover; /* This will cover the area without stretching the image */
 }
 
-.more-text {
+.more {
   display: none;
 }
