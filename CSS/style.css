@@ -39,8 +39,8 @@ html {
 }
 
 .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #0d59aa;
+  border-color: #0c5db4;
 }
 
 .btn-primary:hover {
@@ -59,11 +59,16 @@ html {
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out !important;
 }
 
-.grow {
+.grow,
+.card {
   transition: all 0.2s ease-in-out;
 }
 .grow:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .portfolio-item {
@@ -121,4 +126,10 @@ html {
 
 .more {
   display: none;
+}
+
+.btn-link,
+.read-more-btn {
+  padding: 0;
+  outline: 0;
 }
