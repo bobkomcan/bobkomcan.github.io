@@ -148,8 +148,8 @@ html {
   left: 0;
   right: 0;
 
-  background-size: contain;
-  background-attachment: fixed;
+  /* background-size: contain; */
+  /* background-attachment: fixed; */
 }
 
 #contact {
@@ -160,6 +160,7 @@ html {
 }
 
 .stars {
+  will-change: transform, opacity;
   background-image: radial-gradient(
       2px 2px at 20px 30px,
       #eee,
@@ -174,6 +175,7 @@ html {
   background-size: 200px 200px;
   animation: zoom 5s infinite;
   opacity: 0;
+  transform: translateZ(0);
 }
 
 .stars:nth-child(1) {
