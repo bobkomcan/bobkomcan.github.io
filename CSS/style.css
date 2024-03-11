@@ -97,9 +97,8 @@ html {
 }
 
 .form-control:focus {
-  background-color: #333;
+  background-color: #a1a1a1;
   border-color: #007bff;
-  outline: 0;
   box-shadow: none;
 }
 
