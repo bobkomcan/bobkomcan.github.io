@@ -20,17 +20,6 @@ function readMore(button) {
   var dots = container.querySelector('.dots');
   var moreText = container.querySelector('.more');
 
-  // // Toggle the dots and moreText display style
-  // if (dots.style.display === 'none') {
-  //   dots.style.display = 'inline';
-  //   button.textContent = 'Read More'; // Update the button text
-  //   moreText.style.display = 'none';
-  // } else {
-  //   dots.style.display = 'none';
-  //   button.textContent = 'Read Less'; // Update the button text
-  //   moreText.style.display = 'inline';
-  // }
-
   if (dots.style.display === 'none') {
     dots.style.display = 'inline';
     button.textContent = 'Read More';
