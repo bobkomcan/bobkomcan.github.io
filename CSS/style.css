@@ -8,6 +8,16 @@ html {
   background-color: #121212; /* Very dark grey, near-black background */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .hero-section {
   background: url('../img/photo.jpg') no-repeat center center;
   background-size: cover;
@@ -138,6 +148,12 @@ html {
   border: none;
   padding: 0;
   text-decoration: underline;
+}
+
+@media (max-width: 351px) {
+  .navbar-brand-text {
+    display: none;
+  }
 }
 
 /* Stars 

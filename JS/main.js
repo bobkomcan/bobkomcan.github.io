@@ -1,18 +1,3 @@
-$(document).ready(function () {
-  $('a[href^="#"]').on('click', function (event) {
-    var target = $(this.getAttribute('href'));
-    if (target.length) {
-      event.preventDefault();
-      $('html, body').animate(
-        {
-          scrollTop: target.offset().top,
-        },
-        1000
-      );
-    }
-  });
-});
-
 function readMore(button) {
   // We use the button's parent node to scope our search for related elements
   var container = button.parentNode;
